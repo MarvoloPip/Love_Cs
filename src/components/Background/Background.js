@@ -3,7 +3,8 @@ import './Background.css' // stylesheet
 import NavBar from '../NavBar/NavBar.js'; // navbar
 
 
-class Background extends Component {
+class Background extends React.Component {
+
     render () {
         return (
 

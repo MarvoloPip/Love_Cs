@@ -17,7 +17,19 @@ const mis = [
         title: "Disclaimer",
         url: "#",
         cName: "nb_link"
-    } 
+    }, 
+
+    {
+        title: "High Scores",
+        url: "#",
+        cName: "nb_link"
+    }, 
+    
+    {
+        title: "Feedback",
+        url: "#",
+        cName: "nb_link"
+    }  
 
 ]
 

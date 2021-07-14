@@ -1,3 +1,86 @@
-.nb_link {
-    border: 5px solid black;
+.nb {
+    /* border: 1px solid black; */
+    justify-content: center;
+    display: flex;
+    margin-top: 50px;
+    
 }
+
+.nb_logo {
+    margin-top: 150px;
+    color: white;
+    justify-self: center;
+    font-size: 30px;
+    background: indianred;
+    height: 40px;
+    padding: 4px;
+    cursor: pointer;
+
+    /* border: 1px solid black; */
+
+}
+
+.nb_menu_ul_start {
+    list-style-type: none;
+    justify-content: left;
+    align-items: left;
+    /* border: 1px black solid; */
+    padding: 0px;
+    margin: 0px;
+    display:none;
+}
+
+.nb_link {
+    /* background: linear-gradient(90deg, rgb(254, 94, 129), 0%, 
+                                        rgba(73, 63, 252, 1), 100%); */
+    /* background-color: indianred; */
+    /* background: url(../../bullet_rain_0.jpg); */
+    background-image: linear-gradient(to right, indianred , 75%,rgb(212, 63, 63));
+    background-size: cover;
+    height: 80px;        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+
+    /* border: 1px solid black; */
+    padding: 5px;
+    margin: 0px;
+    margin-left: 0px;
+}
+
+.nb_bars {
+    width: 50px;
+    height: 48px;
+    margin: 0px;
+    margin-top: 150px;
+    cursor: pointer;
+    background-color: indianred;
+    /* border: 1px solid black; */
+
+}
+
+.nb_bars > div {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 7.5px 7.5px;
+}
+
+.nb_mc {
+    width: 35px;
+    height: 15px;
+    background-color:transparent;
+    margin-top: 165px;
+    /* margin: 7.5px 7.5px; */
+    display:none;
+}
+
+.nb_link:hover {
+    background-image: none;
+    background-color: rgb(212, 78, 78);
+}
+
+
