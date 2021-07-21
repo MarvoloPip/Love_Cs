@@ -1,20 +1,10 @@
 import React, { Component } from 'react';
+import {Link as Direct} from "react-router-dom"
 import './NavBar.css' // stylesheet
 import mis from "./mi" // menu items
 
 class NavBar extends React.Component {
 
-    // mced = false;
-
-    // menu_click() {
-    //     mc = document.getElementsByClassName("nb_mc")[0];
-    //     ul = document.getElementsByClassName("nb_menu_ul_start")[0];
-
-
-        
-    //     mced = !mced;
-
-    // }
 
     constructor(props) {
         super(props);
@@ -30,9 +20,16 @@ class NavBar extends React.Component {
         console.log(this.state)
         if (!this.state.mced) {
             this.state.dis = "block";
+            //this.setState(dis, "block");
+            this.setState(() => ({
+                dis: "block"
+            }));
         }
         else {
-            this.state.dis = "none";
+            //this.state.dis = "none";
+            this.setState(() => ({
+                dis: "none"
+            }));
         }
     }
 
@@ -55,13 +52,38 @@ class NavBar extends React.Component {
                 <ul className="nb_menu_ul_start" style={{ display: this.state.dis }}>
 
                     {mis.map((item, index) => {
+                        
+                        // if (item.cName != "Spray Practice") {
+
+                        //     return (
+                        //         <li >
+                        //             <h4 className={item.cName} href={item.url} >
+                        //                 {item.title}
+                        //             </h4>
+                        //         </li>
+                        //     )
+                        // }
+                        // else {
+                        //     return (
+                        //         <li >
+                        //             <Direct to="/blog">
+                        //                 <h4 className={item.cName} href={item.url} >
+                        //                     {item.title}
+                        //                 </h4>
+                        //             </Direct>
+                                    
+                        //         </li>
+                        //     )
+                        // }
                         return (
                             <li >
                                 <h4 className={item.cName} href={item.url} >
-                                    {item.title}
+                                            {item.title}
                                 </h4>
                             </li>
-                        )
+                            )
+                            
+
                     })}
 
                 </ul>
