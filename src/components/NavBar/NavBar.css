@@ -48,7 +48,7 @@
     /* border: 1px solid black; */
     padding: 25px;
     margin: 0px;
-    margin-left: 0px;
+    
 }
 
 .nb_bars {
@@ -83,4 +83,7 @@
     background-color: rgb(212, 78, 78);
 }
 
+.no_underline_pls {
+    text-decoration: none;
+}
 

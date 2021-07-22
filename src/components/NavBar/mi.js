@@ -2,15 +2,15 @@ const mis = [
 
     {
         title: "Spray Practice",
-        url: "#",
+        url: "/spray",
         cName: "nb_link"
     } ,
 
-    {
-        title: "Game knowledge",
-        url: "#",
-        cName: "nb_link"
-    } ,
+    // {
+    //     title: "Game knowledge",
+    //     url: "#",
+    //     cName: "nb_link"
+    // } ,
 
 
     {

@@ -23,13 +23,12 @@ class Background extends React.Component {
                 <div className="body">
         
                     <div className="highlight_reel">
-                    
-                    <div id="cs1"></div>
-                    <div id="cs2"></div>
-                    <div id="cs3"></div>
-                    <div id="cs4"></div>
-                    <div id="cs5"></div>
-                    <div id="cs6"></div>
+                        <div id="cs1"></div>
+                        <div id="cs2"></div>
+                        <div id="cs3"></div>
+                        <div id="cs4"></div>
+                        <div id="cs5"></div>
+                        <div id="cs6"></div>
                     </div>
         
         

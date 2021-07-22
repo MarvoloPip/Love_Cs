@@ -52,34 +52,15 @@ class NavBar extends React.Component {
                 <ul className="nb_menu_ul_start" style={{ display: this.state.dis }}>
 
                     {mis.map((item, index) => {
-                        
-                        // if (item.cName != "Spray Practice") {
-
-                        //     return (
-                        //         <li >
-                        //             <h4 className={item.cName} href={item.url} >
-                        //                 {item.title}
-                        //             </h4>
-                        //         </li>
-                        //     )
-                        // }
-                        // else {
-                        //     return (
-                        //         <li >
-                        //             <Direct to="/blog">
-                        //                 <h4 className={item.cName} href={item.url} >
-                        //                     {item.title}
-                        //                 </h4>
-                        //             </Direct>
-                                    
-                        //         </li>
-                        //     )
-                        // }
+                    
                         return (
                             <li >
-                                <h4 className={item.cName} href={item.url} >
-                                            {item.title}
-                                </h4>
+                                <Direct to={item.url} className="no_underline_pls">
+                                    <h4 className={item.cName} href={item.url} >
+                                                {item.title}
+                                    </h4>
+                                </Direct>
+
                             </li>
                             )
                             

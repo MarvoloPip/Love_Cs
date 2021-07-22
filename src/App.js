@@ -1,5 +1,10 @@
 import React from 'react';
-import {Switch, Route, BrowserRouter} from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 // importing other stuff
 
@@ -12,16 +17,12 @@ import Background from './components/Background/Background';
 
 function App() {
   return (
-    <div>
-    {/* <BrowserRouter>
-        <Switch>
-          <Route path="/" component={App} exact/>
-          <Route path="/spray" component={Spray} exact/>
-        </Switch>
-      </BrowserRouter> */}
-
-    <Background />
-    </div>
+    <Router >
+      <Switch> 
+        <Route exact path="/"><Background/></Route>
+        <Route exact path="/spray"><Spray/></Route>
+      </Switch>
+    </Router>
 
   );
 }
