@@ -1,17 +1,33 @@
 import React, { Component } from 'react';
+import {Helmet} from "react-helmet";
 import './Spray.css' // stylesheet
 
 class Spray extends React.Component {
 
+    runCan() {
+
+        const canvas = document.querySelector("#cv");
+        const ctx = canvas.getContext("2d");
+
+        // console.log("sup");
+        canvas.height = canvas.parentElement.height/2;
+        console.log("hiasd'");
+
+
+    }
+
+
     render () {
         return (
-
+            
             <div className="spray_home">
 
-                <head>
-                <meta charset="UTF-8"/>
+                {/* <Helmet> 
+                    <script src="draw_script.js" type="text/javascript"></script>
+                </Helmet> */}
+
+                <meta charSet="UTF-8"/>
                 <title>Practice Spray N00B</title>
-                </head>
         
                 <div className="spray_grid">
         
@@ -22,7 +38,11 @@ class Spray extends React.Component {
             
                         {/* Main juice innit */}
                         <div className="canvas_sqaure">
-                        
+
+                            <canvas id="cv">
+                            </canvas>
+
+
                         </div>
         
 
@@ -30,10 +50,10 @@ class Spray extends React.Component {
                     </div>
         
                 </div>
-        
-    
+
     
             </div>
+            
            
         )
     }

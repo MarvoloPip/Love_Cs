@@ -56,14 +56,18 @@ body {
   
     margin: 50px;
     margin-bottom: 300px;
-
-  
     display: flex;
     flex-wrap: wrap;
     background: transparent;
-    justify-content: center;
+    justify-content: left;
+    border: 1px solid black;
   }
   
+  #cv {
+    border: 2px black solid;
+    height: 100px;
+  }
+
   /* .home_grid > .body > .highlight_reel > div {
   
     text-align: center;

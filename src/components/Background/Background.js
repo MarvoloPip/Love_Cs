@@ -10,10 +10,8 @@ class Background extends React.Component {
 
             <div className="Home">
 
-                <head>
-                <meta charset="UTF-8"/>
+                <meta charSet="UTF-8"/>
                 <title>Git Gud N00B</title>
-                </head>
         
                 <div className="home_grid">
         

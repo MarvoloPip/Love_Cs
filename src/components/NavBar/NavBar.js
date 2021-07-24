@@ -17,9 +17,9 @@ class NavBar extends React.Component {
         this.setState(pmced => ({
             mced: !pmced.mced
         }));
-        console.log(this.state)
+        //console.log(this.state)
         if (!this.state.mced) {
-            this.state.dis = "block";
+            // this.state.dis = "block";
             //this.setState(dis, "block");
             this.setState(() => ({
                 dis: "block"
@@ -54,7 +54,7 @@ class NavBar extends React.Component {
                     {mis.map((item, index) => {
                     
                         return (
-                            <li >
+                            <li key={item.title}>
                                 <Direct to={item.url} className="no_underline_pls">
                                     <h4 className={item.cName} href={item.url} >
                                                 {item.title}
