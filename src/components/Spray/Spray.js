@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import {Helmet} from "react-helmet";
 import './Spray.css' // stylesheet
 
+import Canvs from '../Canvs/Canvs'; // canvas component
+
 class Spray extends React.Component {
+
 
     runCan() {
 
@@ -21,11 +23,6 @@ class Spray extends React.Component {
         return (
             
             <div className="spray_home">
-
-                {/* <Helmet> 
-                    <script src="draw_script.js" type="text/javascript"></script>
-                </Helmet> */}
-
                 <meta charSet="UTF-8"/>
                 <title>Practice Spray N00B</title>
         
@@ -34,16 +31,14 @@ class Spray extends React.Component {
                     <div className="header">
                         <h1>This isn't COD lmao</h1>
                     </div>
-                    <div className="spray_body">
+                    <div className="spray_body">    
             
-                        {/* Main juice innit */}
                         <div className="canvas_sqaure">
 
-                            <canvas id="cv">
-                            </canvas>
-
+                          <Canvs />
 
                         </div>
+X                        
         
 
             
