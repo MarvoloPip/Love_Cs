@@ -1,26 +1,36 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect, Helmet } from 'react';
 import './Spray.css' // stylesheet
 
 import Canvs from '../Canvs/Canvs'; // canvas component
 
+
 class Spray extends React.Component {
 
+    componentDidMount() {
+        const canvas = document.querySelector("#cv");
+    }
+   
 
     runCan() {
 
-        const canvas = document.querySelector("#cv");
+        const canvas = document.getElementById("cv")[0];
         const ctx = canvas.getContext("2d");
 
-        // console.log("sup");
         canvas.height = canvas.parentElement.height/2;
         console.log("hiasd'");
 
 
     }
 
+    // useScript('./draw_script.js');
 
     render () {
         return (
+
+            // <div ref={el => (this.instance = el)} >
+            // </div>
+           
+
             
             <div className="spray_home">
                 <meta charSet="UTF-8"/>
@@ -35,8 +45,8 @@ class Spray extends React.Component {
             
                         <div className="canvas_sqaure">
 
-                          <Canvs />
-
+                            <Canvs class="cv" />
+                           
                         </div>
 X                        
         
@@ -45,7 +55,9 @@ X
                     </div>
         
                 </div>
-
+                <script > 
+                    {this.runCan()}
+                </script>
     
             </div>
             

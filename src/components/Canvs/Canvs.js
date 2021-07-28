@@ -5,12 +5,8 @@ class Canvs extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {drawing: false, 
-                        canvas: null,
-                        ctx: null,
-                    }
+        this.state = {drawing: false}
         this.setup = this.setup.bind(this);
-        this.setup();
     }
 
     setup() {
@@ -24,13 +20,13 @@ class Canvs extends React.Component {
         //     ctx: this.state.canvas.getContext("2d")
         // }));
         console.log("hi this is stept;");
-        const canvas = document.querySelector("#cv");
+        const canvas = document.getElementById("cv")[0];
 
 
         canvas.addEventListener("mousedown", this.startPos());
         canvas.addEventListener("mouseup", this.finPos());
         canvas.addEventListener("mousemove", this.draw());   
-
+ 
     }
 
     startPos(e) {
@@ -78,13 +74,17 @@ class Canvs extends React.Component {
 
     render () {
         return (
-            <div>
-                <canvas id="cv" onClick={this.draw}>
+            <div>                
+                <canvas id="cv">
                     
-
-
                 </canvas>        
-                
+                {/* <script type="text/javascript">
+                    {console.log("hi")}
+
+                    {this.setup()}
+
+                </script> */}
+
             </div>
            
         )
