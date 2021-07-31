@@ -1,26 +1,52 @@
 import React, { Component, useEffect, Helmet } from 'react';
 import './Spray.css' // stylesheet
 
-import Canvs from '../Canvs/Canvs'; // canvas component
-
+import Canvs2 from '../Canvs2/Canvs2';
+import era from '../Canvs2/Canvs2';
 
 class Spray extends React.Component {
 
-    componentDidMount() {
-        const canvas = document.querySelector("#cv");
-    }
+    // componentDidMount() {
+    //     const canvas = document.querySelector("#cv");
+    // }
    
 
-    runCan() {
+    // runCan() {
 
-        const canvas = document.getElementById("cv")[0];
-        const ctx = canvas.getContext("2d");
+        // const canvas = document.getElementById("cv")[0];
+        // const ctx = canvas.getContext("2d");
 
-        canvas.height = canvas.parentElement.height/2;
-        console.log("hiasd'");
+        // canvas.height = canvas.parentElement.height/2;
+        // console.log("hiasd'");
+    //     if (document.getElementById("cv")[0] == null) {
+    //         console.log("bruh");
+    //     }
+    //     else {
+    //         console.log("bruh2");
+    //     }
 
+    erase() {
+        // const can = document.getElementsByTagName("canvas")[0];
+        // if (can != null) {
+        //     console.log("ads");
+        //     const ctx = can.getContext("2d");
+        //     ctx.closePath();
+        //     ctx.clearRect(0, 0, can.width, can.height);
+        //     ctx.beginPath();
 
+        //     ctx.restore();
+            
+
+        // }else {
+        //     console.log("as");
+        // }
+
+        const can = <Canvs2 />;
+        
     }
+
+
+    // }
 
     // useScript('./draw_script.js');
 
@@ -45,19 +71,25 @@ class Spray extends React.Component {
             
                         <div className="canvas_sqaure">
 
-                            <Canvs class="cv" />
-                           
-                        </div>
-X                        
-        
+                            <div className="draw_area">
+                                <Canvs2 id="cv"/>
+                                <button onClick={this.erase}>
 
+                                </button>
+                            </div>
+
+                        </div>
+                      
+                        {/* <Canvs2 id="cv"/> */}
+                       
             
                     </div>
         
                 </div>
-                <script > 
-                    {this.runCan()}
+                <script>
+                    {this.runCan}
                 </script>
+               
     
             </div>
             
