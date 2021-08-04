@@ -1,6 +1,7 @@
 import { React } from 'react';
 import { Stage, Layer, Line } from 'react-konva';
 import { useEffect, useState, useRef } from 'react';
+import { render } from '@testing-library/react';
 
 // This code was taken from https://medium.com/bb-tutorials-and-thoughts/how-to-implement-drawing-in-react-app-aba092e926e6
 // Courtesy of Bhargav Bhachina
@@ -60,8 +61,8 @@ const Canvs2 = ({onClearLines, clearLines}) => {
     return (
         <div className=" text-center text-dark">
             <Stage
-                width={250}
-                height={300}
+                width={333}
+                height={550}
                 onMouseDown={handleMouseDown}
                 onMousemove={handleMouseMove}
                 onMouseup={handleMouseUp}
@@ -72,8 +73,8 @@ const Canvs2 = ({onClearLines, clearLines}) => {
                         <Line
                         key={i}
                         points={line.points}
-                        stroke="orange"
-                        strokeWidth={2}
+                        stroke="rgb(255, 123, 0)"
+                        strokeWidth={5.6}
                         tension={0.5}
                         lineCap="round"
                         globalCompositeOperation={

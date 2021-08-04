@@ -46,16 +46,17 @@ body {
     padding: 10px;
     text-align: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    height: 1600px;
     
   }
   
   .spray_grid > .spray_body > .canvas_sqaure {
-    width: 1000px;
-    height: 700px;
+    width: 1700px  ;
+    height: 600px;
   
     margin: 50px;
-    margin-bottom: 300px;
+    /* margin-bottom: 300px; */
     display: flex;
     flex-wrap: wrap;
     background: transparent;
@@ -63,58 +64,98 @@ body {
     border: 1px solid black;
   }
 
+
   .draw_area {
-    background-color: grey;
-    width: 250px;
-    height: 300px;
-    border: 2px black solid;
+    /* margin-left: 25px; */
+    background-color: rgb(68, 68, 68);
+    width: 333px;
+    height: 550px;
+    /* border: 2px black solid; */
+    color: rgb(255, 123, 0);
   }
-  
 
-
-  /* .home_grid > .body > .highlight_reel > div {
-  
-    text-align: center;
-    padding: 5px;
-    margin: 10px;
-    background: white;
-    width: 400px;
-    height: 200px;
+  .canvas_sqaure > * {
+    margin-left: 30px;
+    margin-right: 30px;
 
   }
   
-  .home_grid > .body > .highlight_reel > #cs1 {
-    background: url(../../nothingg.gif);
-    background-size: cover; 
+  #but_box {
+    margin-top: 225px;
   }
-  
-  .home_grid > .body > .highlight_reel > #cs2 {
-    background: url(../../snax2.gif);
-    background-size: cover; 
+
+  #but_box > p {
+    color: white;
+    font-weight: bold;
   }
-  
-  .home_grid > .body > .highlight_reel > #cs3 {
-    background: url(../../olof2.gif);
-    background-size: cover; 
+
+  .spray_box {
+    /* margin: 25px; */
+    width: 333px;
+    height: 550px;
+    background-size: cover;
+    background: url(../../sprays/ak47_spray.gif);
+    background-repeat: no-repeat;
   }
-  
-  .home_grid > .body > .highlight_reel > #cs4 {
-    background: url(../../cold2.gif);
-    background-size: cover; 
+
+  #spray_gif {
+    /* width: 333px; 
+    height: 550px; */
+    background-size: cover;
+    background: url(../../sprays/ak47_spray.gif);
+    background-repeat: no-repeat;
   }
-  
-  .home_grid > .body > .highlight_reel > #cs5 {
-    background: url(../../stewie.gif);
-    background-size: cover; 
+
+  .gun_box {
+    width: 600px;
+    height: 600px;
   }
-  
-  .home_grid > .body > .highlight_reel > #cs6 {
-    background: url(../../simple.gif);
-    background-size: cover; 
+
+  .gun_img {
+    /* margin: 10px; */
+    width: 600px;
+    height: 400px;
+    background: url(../../ak_stats.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* transform: scaleX(-1); */
+
   }
-  
-  
-  .blind {
-    visibility: hidden;
+
+  .gun_details {
+    display: flex;
+    flex-direction: row;
+
   }
-   */
+
+  #gun_title_box {
+    margin: auto;
+    height: 187px;
+  }
+
+  #gun_title {
+    font-size: 110px;
+    color: white;
+    margin: 30px;
+    font-weight: bold;
+  }
+
+  .gun_detail_box {
+    margin-left: 10px;
+    color: white;
+  }
+
+  .gun_detail_box > p{
+    font-size: 25px;
+  }
+
+  .gun_buts > button {
+    margin-top: 0px;
+  }
+
+  #er {
+    height: 20px;
+    width: 40px;
+    color: white;
+  }
+
