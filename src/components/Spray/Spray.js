@@ -2,46 +2,51 @@ import React, { Component, useEffect, Helmet} from 'react';
 import * as ReactDOM from 'react-dom';
 import './Spray.css' // stylesheet
 
-import Canvs2 from '../Canvs2/Canvs2';
-import era from '../Canvs2/Canvs2';
+import Canvs2 from '../Canvs2/Canvs2'; //the canvas
+import guns from "./guns" // the gun list
+import { tsMethodSignature } from '@babel/types';
 
 class Spray extends React.Component {
 
-    // componentDidMount() {
-    //     const canvas = document.querySelector("#cv");
-    // }
-   
+    constructor(props) {
+        super(props);
+        this.state = {img: "url(../../t_img/ak_stats.png)", gif: "url(../../sprays/ak47_spray.gif)"}
+        this.gun_click = this.gun_click.bind(this);
+    }
 
-    // runCan() {
+    gun_click(i) {
 
-        // const canvas = document.getElementById("cv")[0];
-        // const ctx = canvas.getContext("2d");
+        var na = document.getElementById("gun_title")
+        var d_stat = document.getElementById("d_stat");
+        var f_stat = document.getElementById("f_stat");
+        var mc_stat = document.getElementById("mc_stat");
+        var s_gif = document.getElementById("gif_box");
+        var g_pic = document.getElementById("g_img");
 
-        // canvas.height = canvas.parentElement.height/2;
-        // console.log("hiasd'");
-    //     if (document.getElementById("cv")[0] == null) {
-    //         console.log("bruh");
-    //     }
-    //     else {
-    //         console.log("bruh2");
-    //     }
+
+        if (0 <= i < guns.length){
+
+            // title
+            na.innerHTML = guns[i].name; 
+
+            // stats
+            d_stat.innerHTML = guns[i].d;
+            f_stat.innerHTML = guns[i].fr;
+            mc_stat.innerHTML = guns[i].mc;
+
+            // pics/gifs
+            // s_gif.style.background = "url(" + guns[0].spr + ")";
+            // g_pic.setAttribute('style', 'background: url(../../t_img/ak_stats.png)');
+            g_pic.style.background = "url(./ak_stats.png)";
+            console.log(g_pic.style.background);
+
+        }
+        //console.log(i);
+        return
+    }
 
     erase() {
-        // const can = document.getElementsByTagName("canvas")[0];
-        // if (can != null) {
-        //     console.log("ads");
-        //     const ctx = can.getContext("2d");
-        //     ctx.closePath();
-        //     ctx.clearRect(0, 0, can.width, can.height);
-        //     ctx.beginPath();
-
-        //     ctx.restore();
-            
-
-        // }else {
-        //     console.log("as");
-        // }
-
+        
         
         var area = document.getElementsByClassName("draw_area")[0];
         //area.remove();
@@ -64,23 +69,9 @@ class Spray extends React.Component {
 
 
         ReactDOM.render(can3, document.getElementsByClassName("draw_area")[0]);
-        //const can = document.getElementsByTagName("canvas")[0];
 
-        
-        
-        // const ctx = can.getContext("2d");
-        // ctx.closePath();
-        // ctx.clearRect(0, 0, can.width, can.height);
-        // ctx.beginPath();
-
-
-        
     }
 
-
-    // }
-
-    // useScript('./draw_script.js');
 
     render () {
         return (
@@ -97,7 +88,8 @@ class Spray extends React.Component {
                 <div className="spray_grid">
         
                     <div className="header">
-                        <h1>This isn't COD lmao</h1>
+                        <h1>This isn't COD lmao </h1>
+                        <h2> practice your spray </h2>
                     </div>
                     <div className="spray_body">    
             
@@ -113,22 +105,23 @@ class Spray extends React.Component {
                                 <Canvs2 id="cv"/>
 
                             </div>
-                            <div className="spray_box"></div>
+                            <div className="spray_box" id="gif_box"></div>
                             <div className="gun_box">
-                                <div className="gun_img"></div>  
+                                <div className="gun_img" id="g_img" ></div>  
+                                {/* <img src={require('./ak_stats.png')} /> */}
                                 <div className="gun_details">
                                     <div id="gun_title_box"> 
                                         <p id="gun_title">AK-47</p>
                                     </div>
-                                    <div id="gun_detail_box" className="gun_detail_box">
+                                    <div id="gun_dbox" className="gun_detail_box">
                                         <p> Damage </p>
                                         <p> Firerate</p>
                                         <p> Mag/Cap </p>
                                     </div>
-                                    <div id="gun_detail_box2" className="gun_detail_box">
-                                        <p> Damage </p>
-                                        <p> Firerate</p>
-                                        <p> Mag/Cap </p>
+                                    <div id="gun_dbox2" className="gun_detail_box">
+                                        <p id="d_stat"> {guns[0].d} </p>
+                                        <p id="f_stat">  {guns[0].fr}</p>
+                                        <p id="mc_stat"> {guns[0].mc} </p>
                                     </div>
                                 </div>
                             </div>                                   
@@ -136,19 +129,24 @@ class Spray extends React.Component {
                         </div>
 
                         <div className="gun_buts">
-                            <button> bruh </button>
-                        </div>
-                      
-                        {/* <Canvs2 id="cv"/> */}
-                       
+                            {guns.map((item, index) => {
+                        
+                                return (
+                                    <button id={index} onClick={ () => this.gun_click(index)}>
+                                        
+                                        <h4>
+                                            {item.name}
+                                        </h4>
+
+                                    </button>
+                                    )
+                            })}
+
+                        </div>                     
             
                     </div>
         
-                </div>
-                <script>
-                    {this.runCan}
-                </script>
-               
+                </div>               
     
             </div>
             
