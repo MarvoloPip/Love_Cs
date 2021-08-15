@@ -23,6 +23,19 @@ class Spray extends React.Component {
         var s_gif = document.getElementById("gif_box");
         var g_pic = document.getElementById("g_img");
 
+        // <div className="gun_img" id="g_img" ></div> 
+        var g_pic2 = document.createElement('div');
+        g_pic2.id = "g_img";
+        g_pic2.className = "gun_img" + (i+1);
+        // console.log(g_pic2.id);
+
+        // <div className="spray_box" id="gif_box"></div>
+        var s_gif2 = document.createElement('div');
+        s_gif2.id = 'gif_box';
+        s_gif2.className = 'spray_box' + (i+1);
+
+
+ 
 
         if (0 <= i < guns.length){
 
@@ -37,8 +50,11 @@ class Spray extends React.Component {
             // pics/gifs
             // s_gif.style.background = "url(" + guns[0].spr + ")";
             // g_pic.setAttribute('style', 'background: url(../../t_img/ak_stats.png)');
-            g_pic.style.background = "url(./ak_stats.png)";
-            console.log(g_pic.style.background);
+            // g_pic.style.background = "url(./ak_stats.png)";
+            // console.log(g_pic.style.background);
+
+            g_pic.parentElement.replaceChild(g_pic2, g_pic);
+            s_gif.parentElement.replaceChild(s_gif2, s_gif);
 
         }
         //console.log(i);
@@ -105,10 +121,10 @@ class Spray extends React.Component {
                                 <Canvs2 id="cv"/>
 
                             </div>
-                            <div className="spray_box" id="gif_box"></div>
+                            <div className="spray_box1" id="gif_box"></div>
                             <div className="gun_box">
-                                <div className="gun_img" id="g_img" ></div>  
-                                {/* <img src={require('./ak_stats.png')} /> */}
+                                <div className="gun_img1" id="g_img" ></div>  
+                                {/* <img className="gun_img" src={('./ak_stats.png')} /> */}
                                 <div className="gun_details">
                                     <div id="gun_title_box"> 
                                         <p id="gun_title">AK-47</p>

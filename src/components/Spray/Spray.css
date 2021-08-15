@@ -103,9 +103,82 @@ body {
     width: 333px;
     height: 550px;
     background-size: cover;
-    background: url(../../sprays/ak47_spray.gif);
+    /* background: url(../../sprays/ak47_spray.gif); */
     background-repeat: no-repeat;
   }
+
+
+  .spray_box1 {
+    /* margin: 25px; */
+    width: 333px;
+    height: 550px;
+    background-size: cover;
+    background: url(../../sprays/ak47_spray.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+  }
+  .spray_box2 {
+    /* margin: 25px; */
+    width: 333px;
+    height: 550px;
+    background-size: cover;
+    background: url(../../sprays/m4a4_spray.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+
+  }
+  .spray_box3 {
+    /* margin: 25px; */
+    width: 333px;
+    height: 550px;
+    background-size: cover;
+    background: url(../../sprays/m4a1_spray.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+
+  }
+  .spray_box4 {
+    /* margin: 25px; */
+    width: 333px;
+    height: 550px;
+    background-size: cover;
+    background: url(../../sprays/aug_spray.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+
+  }
+  .spray_box5 {
+    /* margin: 25px; */
+    width: 333px;
+    height: 550px;
+    background-size: cover;
+    background: url(../../sprays/famas_spray.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+
+  }
+  .spray_box6 {
+    /* margin: 25px; */
+    width: 333px;
+    height: 550px;
+    background-size: cover;
+    background: url(../../sprays/sg_spray.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+
+  }
+  .spray_box7 {
+    /* margin: 25px; */
+    width: 333px;
+    height: 550px;
+    background-size: cover;
+    background: url(../../sprays/galil_spray.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+
+  }
+  
 
   .gun_box {
     width: 750px;
@@ -116,9 +189,130 @@ body {
     /* margin: 10px; */
     width: 600px;
     height: 400px;
-    background: url(./ak_stats.png);
+    /* background: url(../../t_img/ak_stats.png); */
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
+    /* transform: scaleX(-1); */
+
+  }
+
+  .gun_img1 {
+    /* margin: 10px; */
+    width: 600px;
+    height: 400px;
+    background: url(../../t_img/ak_stats.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    /* transform: scaleX(-1); */
+
+  }
+
+  .gun_img2 {
+    /* margin: 10px; */
+    width: 600px;
+    height: 400px;
+    background: url(../../t_img/a4_stats.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    /* transform: scaleX(-1); */
+
+  }
+
+  .gun_img3 {
+    /* margin: 10px; */
+    width: 600px;
+    height: 400px;
+    background: url(../../t_img/a1s_stats.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    /* transform: scaleX(-1); */
+
+  }
+
+  .gun_img4 {
+    /* margin: 10px; */
+    width: 600px;
+    height: 400px;
+    background: url(../../t_img/aug_stats.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    /* transform: scaleX(-1); */
+
+  }
+
+  .gun_img5 {
+    /* margin: 10px; */
+    width: 600px;
+    height: 400px;
+    background: url(../../t_img/famas_stats.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    /* transform: scaleX(-1); */
+
+  }
+
+  .gun_img6 {
+    /* margin: 10px; */
+    width: 600px;
+    height: 400px;
+    background: url(../../t_img/sg_stats.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    /* transform: scaleX(-1); */
+
+  }
+
+  .gun_img7 {
+    /* margin: 10px; */
+    width: 600px;
+    height: 400px;
+    background: url(../../t_img/galil_stats.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    /* transform: scaleX(-1); */
+
+  }
+
+  .gun_img8 {
+    /* margin: 10px; */
+    width: 600px;
+    height: 400px;
+    background: url(../../t_img/mac10_stats.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    /* transform: scaleX(-1); */
+
+  }
+
+  .gun_img9 {
+    /* margin: 10px; */
+    width: 600px;
+    height: 400px;
+    background: url(../../t_img/ump_stats.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    /* transform: scaleX(-1); */
+
+  }
+
+  .gun_img10 {
+    /* margin: 10px; */
+    width: 600px;
+    height: 400px;
+    background: url(../../t_img/mp9_stats.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    /* transform: scaleX(-1); */
+
+  }
+
+  .gun_img11 {
+    /* margin: 10px; */
+    width: 600px;
+    height: 400px;
+    background: url(../../t_img/mp7_stats.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
     /* transform: scaleX(-1); */
 
   }
