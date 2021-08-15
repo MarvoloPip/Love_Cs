@@ -1,0 +1,23 @@
+.db_div {
+    background: url(../../backs/csDisc.jpg);
+    background-size: cover;
+    height: 1000px;
+    
+}
+
+
+.title {
+    color: rgb(255, 196, 0);
+    font-weight: bold;
+    font-size: 100px;
+    margin-top: 0px;
+}
+
+.h6 {
+
+    color: rgb(255, 196, 0);
+    font-weight: bold;
+    font-size: 50px;
+    margin: 0px 10px;
+
+} 

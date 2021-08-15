@@ -33,6 +33,40 @@ class NavBar extends React.Component {
         }
     }
 
+    hoverInfo(i) {
+
+        if (i == 0){
+            return
+        }
+        else if (i == 1) {
+            var dc = document.getElementById('two');
+            dc.style.fontSize = "10px";
+            dc.innerHTML = "hello hi thnx for visiting this site haha its meant to offend u but in a " +
+                "good way to encourage u to get better while also preparing u for solo q lmao ";
+        }
+        else if (i == 2) {
+            var fb = document.getElementById('three');
+            fb.style.fontSize = "20px";
+            fb.innerHTML = "would appreciate any feedback @gmail.com ";
+        }
+
+    }
+
+    hoverOut(i) {
+        if (i == 0){
+            return
+        }
+        else if (i == 1) {
+            var dc = document.getElementById('two');
+            dc.style.fontSize = "40px";
+            dc.innerHTML = "Disclaimer";
+        }
+        else if (i == 2) {
+            var fb = document.getElementById('three');
+            fb.style.fontSize = "40px";
+            fb.innerHTML = "Feedback";
+        }
+    }
 
     render () {
         return (
@@ -54,9 +88,9 @@ class NavBar extends React.Component {
                     {mis.map((item, index) => {
                     
                         return (
-                            <li key={item.title}>
-                                <Direct to={item.url} className="no_underline_pls">
-                                    <h4 className={item.cName} href={item.url} >
+                            <li key={item.title} id={item.i}>
+                                <Direct to={item.url} className="no_underline_pls" >
+                                    <h4 className={item.cName} href={item.url}>
                                                 {item.title}
                                     </h4>
                                 </Direct>

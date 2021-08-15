@@ -13,7 +13,8 @@ import './App.css';
 // import components
 import Spray from './components/Spray/Spray';
 import Background from './components/Background/Background';
-
+import Disc from './components/Disc/Disc'
+import Fb from './components/Feedback/Feedback'
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
       <Switch> 
         <Route exact path="/"><Background/></Route>
         <Route exact path="/spray"><Spray/></Route>
+        <Route exact path="/disclaimer"><Disc/></Route>
+        <Route exact path="/feedback"><Fb/></Route>
       </Switch>
     </Router>
 

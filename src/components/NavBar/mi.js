@@ -3,10 +3,11 @@ const mis = [
     {
         title: "Spray Practice",
         url: "/spray",
-        cName: "nb_link"
+        cName: "nb_link",
+        i: "one"
     } ,
 
-    // {
+    //
     //     title: "Game knowledge",
     //     url: "#",
     //     cName: "nb_link"
@@ -15,20 +16,23 @@ const mis = [
 
     {
         title: "Disclaimer",
-        url: "#",
-        cName: "nb_link"
+        url: "/disclaimer",
+        cName: "nb_link",
+        i: "two"
+
     }, 
 
-    {
-        title: "High Scores",
-        url: "#",
-        cName: "nb_link"
-    }, 
+    // {
+    //     title: "High Scores",
+    //     url: "#",
+    //     cName: "nb_link"
+    // }, 
     
     {
         title: "Feedback",
-        url: "#",
-        cName: "nb_link"
+        url: "/feedback",
+        cName: "nb_link",
+        i: "three"
     }  
 
 ]

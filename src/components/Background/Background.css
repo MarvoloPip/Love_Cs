@@ -33,14 +33,14 @@ body {
     border: 1px solid black; */
     /* height: 200px; */
     flex:100%;
-    background: url(../../cache2.jpg);
+    background: url(../../backs/cache2.jpg);
     padding: 10px;
     text-align: center;
     
   }
   
   .home_grid > .header > h1 {
-    color: white;
+    color: rgb(255, 196, 0);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 50px;
   }
@@ -55,7 +55,7 @@ body {
     border: 1px solid black; */
     /* height: 1000px; */
     flex:100%;
-    background: url(../../cache.jpg);
+    background: url(../../backs/cache.jpg);
     padding: 10px;
     text-align: center;
     display: flex;
@@ -85,39 +85,39 @@ body {
     text-align: center;
     padding: 5px;
     margin: 10px;
-    background: white;
+    background: rgb(255, 196, 0);
     width: 400px;
     height: 200px;
 
   }
   
   .home_grid > .body > .highlight_reel > #cs1 {
-    background: url(../../nothingg.gif);
+    background: url(../../hr/nothingg.gif);
     background-size: cover; 
   }
   
   .home_grid > .body > .highlight_reel > #cs2 {
-    background: url(../../snax2.gif);
+    background: url(../../hr/snax2.gif);
     background-size: cover; 
   }
   
   .home_grid > .body > .highlight_reel > #cs3 {
-    background: url(../../olof2.gif);
+    background: url(../../hr/olof2.gif);
     background-size: cover; 
   }
   
   .home_grid > .body > .highlight_reel > #cs4 {
-    background: url(../../cold2.gif);
+    background: url(../../hr/cold2.gif);
     background-size: cover; 
   }
   
   .home_grid > .body > .highlight_reel > #cs5 {
-    background: url(../../stewie.gif);
+    background: url(../../hr/stewie.gif);
     background-size: cover; 
   }
   
   .home_grid > .body > .highlight_reel > #cs6 {
-    background: url(../../simple.gif);
+    background: url(../../hr/simple.gif);
     background-size: cover; 
   }
   

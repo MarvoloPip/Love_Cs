@@ -8,7 +8,7 @@
 
 .nb_logo {
     margin-top: 150px;
-    color: white;
+    color: rgb(255, 196, 0);
     justify-self: center;
     font-size: 30px;
     background: indianred;
@@ -42,7 +42,7 @@
     justify-content: center;
     align-items: center;
     font-size: 40px;
-    color: white;
+    color: rgb(255, 196, 0);
     text-decoration: none;
 
     /* border: 1px solid black; */
@@ -65,7 +65,7 @@
 .nb_bars > div {
     width: 35px;
     height: 5px;
-    background-color: white;
+    background-color: rgb(255, 196, 0);
     margin: 7.5px 7.5px;
 }
 
