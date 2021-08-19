@@ -58,6 +58,7 @@ class Spray extends React.Component {
 
         }
         //console.log(i);
+        this.erase();
         return
     }
 
