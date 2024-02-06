@@ -2,6 +2,6 @@
 
 A React Project meant to help CS:GO players improve their spray patterns 
 
-Website: https://ilovecsgo.herokuapp.com/
+[Currently Down] Website: https://ilovecsgo.herokuapp.com/
 
 Demo Avalible Here: https://youtu.be/uKARkO2vGqM
